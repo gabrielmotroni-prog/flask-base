@@ -1,13 +1,22 @@
 <!-- index.html -->
-{% extends 'base.html' %}
+<!--{% extends 'base.html' %}-->
+
+
 
 {% block conteudo %}
 
-  {% for post in posts %}
-    <h2>{{ post.titulo }}</h2>
-    <p><b>Autor: {{ post.autor }}</b></p> 
-    <p>{{ post.texto }}</p>
+  {% for i in presenca_posts %}
+    
+    <div id="exibicao_respostas">
+    <h3>E-mail:   {{i.email}}</h2>
+    <p>Presença: {{i.presenca}}</p>
+    <p>Resposta: {{i.resposta}}</p>
+    <p>Comentário:{{i.comentario}}</p>
+    </div>
+    <hr>
   {% else %}
     <p>Nenhum post</p>
+    <h2>{{ presenca}}</h2>
+    
   {% endfor %}
 {% endblock %}

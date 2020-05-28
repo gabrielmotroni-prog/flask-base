@@ -1,7 +1,62 @@
 body {
   padding-top: 5rem;
+  
+  
 }
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
+ 
+  
+}
+#div_gabriel{
+  background: whitesmoke;
+   border-radius:5px;
+   color: blue;
+}
+
+#exibicao_respostas{
+   background: whitesmoke;
+   border-radius:5px;
+  
+}
+
+/*/Define um tamanho, impedindo que fiquem desalinhados*/
+
+label, input {
+	width:100px;
+	margin: 3px 0;
+}
+
+/* AUMENTA A largura do INPUT*/
+input {
+	width:250px;
+}
+
+input#presente{
+    all: unset;
+    border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+input#ausente{
+    all: unset;
+    border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+input#presente:checked{
+  background-color: blue;
+  width: 25px;
+  height: 25px;
+}
+
+input#ausente:checked{
+  background-color: red;
+  width: 25px;
+  height: 25px;
 }
